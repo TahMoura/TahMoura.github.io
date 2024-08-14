@@ -54,39 +54,35 @@ body::-webkit-scrollbar-thumb {
     color: var(--pink-500);
 }
 
+/* Estilos Gerais para Botões */
 button,
 a {
-    cursor: pointer;    /* Definindo que o botão e as tags <a> fiquem com o cursor para clique */
+    cursor: pointer; /* Definindo que o botão e as tags <a> fiquem com o cursor para clique */
 }
 
 /* Classe Padrão para todos os Botões */
 .btn {
     text-align: center;
-    padding: 12px 32px; /* Espaçamento interno original */
-    background: none;
-    border: 1px solid var(--pink-500);
+    padding: 12px 32px; /* Definindo espaçamento interno de 12px acima e abaixo e 32px nas laterais */
+    background: none; /* Sem background */
+    border: 1px solid var(--pink-500); /* Borda com 1px, com a linha sólida e cor rosa */
     color: var(--black);
-    border-radius: 10px;
-    font-weight: 700;
-    display: inline-block; /* Garante que o botão se comporte como um bloco em linha */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
-    margin: 8px; /* Adiciona um pouco de espaçamento ao redor dos botões */
+    border-radius: 10px; /* Deixa a borda das tags arredondadas */
+    font-weight: 700; /* Deixa a fonte em negrito */
+    margin-bottom: 32px; /* Adiciona espaçamento inferior aos botões */
 }
 
+/* Hover: pseudo-classe que modifica algo no HTML quando o usuário passa o mouse acima do elemento */
 .btn:hover {
     background: var(--pink-500);
-    color: var(--white); /* Garante que o texto seja legível ao passar o mouse */
 }
 
-/* Ajustes para responsividade */
-@media screen and (max-width: 768px) {
+/* Ajustes para Botões em Dispositivos Móveis */
+@media screen and (max-width: 600px) {
     .btn {
-        width: 100%; /* Faz com que os botões ocupem toda a largura disponível em telas pequenas */
-        padding: 12px; /* Ajusta o espaçamento interno em telas pequenas */
-        font-size: 14px; /* Ajusta o tamanho da fonte em telas pequenas */
+        margin-bottom: 48px; /* Aumenta o espaçamento inferior em telas pequenas */
     }
 }
-
 
 /* Classe Padrão para Alinhamento com Display Flex */
 .flex {
@@ -233,11 +229,11 @@ h4 {
     max-width: 1120px;
     margin: 64px auto 32px; /* Espaçamento original */
     padding: 0 32px;
-    display: grid;              /* Modo de organização de elementos em Grade - Colunas e Linhas - parecido com uma tabela */
-    justify-content: center;    /* Alinhamento horizontal */
-    align-items: center;        /* Alinhamento vertical */
-    grid-template-columns: repeat(auto-fill, 518px);    /* Definimos as colunas do Grid/Grade com uma largura mínima de 518 pixels, preenchendo automaticamente o espaço disponível. */ 
-    gap: 20px;  /* Espaçamento acima, abaixo, e nas laterais usado no display grid, para dar espaço aos elementos */
+    display: grid; /* Modo de organização de elementos em Grade - Colunas e Linhas */
+    justify-content: center; /* Alinhamento horizontal */
+    align-items: center; /* Alinhamento vertical */
+    grid-template-columns: repeat(auto-fill, 518px); /* Largura mínima das colunas */
+    gap: 20px; /* Espaçamento entre os elementos */
 }
 
 @media screen and (max-width: 768px) {
@@ -248,42 +244,33 @@ h4 {
     }
 }
 
-/* Ajustes para o texto "Você pode entrar em contato" */
+/* Ajustes para o título */
 .contato_container h4 {
-    font-size: 32px; /* Tamanho da fonte original */
-    text-align: center; /* Alinhamento centralizado */
-    margin: 16px 0; /* Margem original */
+    font-size: 32px;
+    font-weight: bold;
+    margin: 16px 0; /* Ajuste original, pode ser modificado conforme necessidade */
 }
 
-/* Responsividade para telas pequenas, como uma tela de 6 polegadas */
-@media screen and (max-width: 600px) {
-    .contato_content h4 {
-        font-size: 28px; /* Ajusta o tamanho da fonte para uma tela de 6 polegadas */
-        margin: 16px 8px; /* Ajusta a margem para melhor espaçamento em telas menores */
-    }
-    
-    .contato_container {
-        padding: 0 16px; /* Reduz o padding lateral para telas menores */
-    }
-    
-    .contato_content {
-        font-size: 18px; /* Ajusta o tamanho da fonte do conteúdo de contato para melhor legibilidade em telas pequenas */
-    }
-}
-
-
+/* Ajustes para o conteúdo do contato */
 .contato_content {
     display: flex;
     flex-direction: column;
-    justify-content: center;    /* alinhamento horizontal */
-    align-items: center;        /* alinhamento vertical */
-    margin: 64px 0 0 0;
+    justify-content: center; /* Alinhamento vertical */
+    align-items: center; /* Alinhamento horizontal */
+    margin: 64px 0 0 0; /* Ajusta a margem superior */
     font-size: 20px;
 }
 
-.contato_content p {
-    display: block;
-    text-align: justify;
+@media screen and (max-width: 600px) {
+    .contato_content {
+        margin: 32px 0 0 0; /* Ajusta a margem superior em telas pequenas */
+        gap: 16px; /* Reduz o espaçamento entre os itens para evitar sobreposição */
+    }
+
+    /* Ajusta o espaçamento adicional para o botão */
+    .contato_content .btn {
+        margin-top: 64px; /* Aumenta a margem superior ao botão em telas pequenas para afastar do título */
+    }
 }
 
 /* REDES SOCIAIS */
