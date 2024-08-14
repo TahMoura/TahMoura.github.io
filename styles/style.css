@@ -7,10 +7,10 @@
     outline: none;
     font-weight: 400;
 
-    font-family: 'Poppins', sans-serif; /* Definindo a Fonte de Texto do Projeto*/
+    font-family: 'Poppins', sans-serif; /* Definindo a Fonte de Texto do Projeto */
 }
 
-/* Definindo "variaveis" de cor para o projeto*/
+/* Definindo "variáveis" de cor para o projeto */
 :root {
     --pink-200: #fd5a90;   /* rosa claro */
     --pink-500: #e91e63;   /* rosa mais intenso */
@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;                    /* borda do scroll */
 }
 
-#name{
+#name {
     color: var(--pink-500);
 }
 
@@ -64,10 +64,10 @@ a {
     text-align: center;
     padding: 12px 32px; /* Definindo espaçamento interno de 12px acima e abaixo e 32px nas laterais */
     background: none;   /* Sem background */
-    border: 1px solid var(--pink-500);    /* Borda com 1px, com a linha solida e cor roxa */
+    border: 1px solid var(--pink-500);    /* Borda com 1px, com a linha sólida e cor roxa */
     color: var(--black);
     border-radius: 10px;    /* Deixa a borda das tags arredondadas */
-    font-weight: 700;       /* Deixa a fonte em negrito*/
+    font-weight: 700;       /* Deixa a fonte em negrito */
 }
 
 /* Hover: pseudo-classe que modifica algo no HTML quando o usuário passa o mouse acima do elemento */
@@ -77,12 +77,12 @@ a {
 
 /* Classe Padrão para Alinhamento com Display Flex */
 .flex {
-    display: flex;              /* modo de organização de elementos: Flex*/
+    display: flex;              /* modo de organização de elementos: Flex */
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
 }
 
-/* Classe Padrão para Alinhamento com Display Flex em Modo Coluna*/
+/* Classe Padrão para Alinhamento com Display Flex em Modo Coluna */
 .flex-column {
     display: flex;
     justify-content: center;
@@ -92,22 +92,20 @@ a {
 
 /* MENU */
 .menu_container {
-    height: 80px;       /* altura do elemento/tag*/
-
-    position: sticky;   /* Posição fixa no topo da tela*/
-    top: 0;             /* Posição no topo a esquerda */
-    width: 100%;        /* Usar todo o espaço disponivel */
-
+    height: 80px;       /* altura do elemento/tag */
+    position: sticky;   /* Posição fixa no topo da tela */
+    top: 0;             /* Posição no topo à esquerda */
+    width: 100%;        /* Usar todo o espaço disponível */
     background-color: var(--light-pink);
     border-bottom: 1px solid var(--pink-500);
     filter: opacity(0.9);   /* permite que add um filtro, no caso a opacidade */
 }
 
-/* Irá alterar todas as tags <a>, obrigatoriamente, dentro da classe menu_container*/
+/* Irá alterar todas as tags <a>, obrigatoriamente, dentro da classe menu_container */
 .menu_container a {
     font-size: 16px;    /* tamanho da fonte */
     color: var(--pink-200);
-    font-weight: bold;  /* Deixa a fonte em negrito*/
+    font-weight: bold;  /* Deixa a fonte em negrito */
 }
 
 .menu_container a:hover {
@@ -115,9 +113,8 @@ a {
 }
 
 .menu_content {
-    max-width: 1120px;  /* tamanho máximo que esse elemento terá*/
+    max-width: 1120px;  /* tamanho máximo que esse elemento terá */
     padding: 0 24px;    /* definindo espaçamento interno de 0px acima e abaixo e 24px nas laterais */
-
     width: 100%;        /* dos 1120px, o elemento deve ocupar todo esse espaço */
     display: flex;
     justify-content: space-between; /* coloca os elementos os mais longe um do outro, com um espaço entre eles */
@@ -128,25 +125,17 @@ a {
     text-align: center;
 }
 
-/* Irá alterar todas as tags <li>, obrigatoriamente, dentro da classe menu_lista*/
+/* Irá alterar todas as tags <li>, obrigatoriamente, dentro da classe menu_lista */
 .menu_lista li {
-    /* definindo espaçamento externo de 0px acima, lado direito, abaixo e 24px na lateral esquerda */
-    margin: 0 0 0 16px; 
+    margin: 0 0 0 16px; /* definindo espaçamento externo de 0px acima, lado direito, abaixo e 16px na lateral esquerda */
 }
 
 /* HOME */
 .home_container {
     max-width: 1120px;
-
-    /* definindo espaçamento externo de 16px acima e abaixo, e automatico nas laterais */
-    margin: 16px auto;
-
-    /* definindo espaçamento interno de 0px acima e abaixo, e 16px nas laterais */
-    padding: 0 16px;
-
-    /* Fazemos um cálculo, pegamos toda a tela visivel do usuário, e subtraimos 100px, devido o tamanho do menu*/
-    height: calc(100vh - 100px);    
-
+    margin: 16px auto; /* definindo espaçamento externo de 16px acima e abaixo, e automático nas laterais */
+    padding: 0 16px;   /* definindo espaçamento interno de 0px acima e abaixo, e 16px nas laterais */
+    height: calc(100vh - 100px); /* Fazemos um cálculo, pegamos toda a tela visível do usuário, e subtraímos 100px, devido o tamanho do menu */
     display: flex;
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
@@ -180,8 +169,7 @@ h4 {
 }
 
 .home_content {
-    width: 50vw;    /* o conteudo será mostrado utilizando metada da tela visivel do usuario */
-
+    width: 50vw;    /* o conteúdo será mostrado utilizando metade da tela visível do usuário */
     display: flex;
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
@@ -199,7 +187,6 @@ h4 {
     margin: -24px auto; /* margin inversa, ou seja, o sobre fica um pouco acima da tag anterior */
     padding: 0 16px;
     height: 100vh;
-
     display: flex;
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
@@ -231,14 +218,21 @@ h4 {
 /* CONTATO */
 .contato_container {
     max-width: 1120px;
-    margin: 64px auto 32px;
+    margin: 64px auto 32px; /* Espaçamento original */
     padding: 0 32px;
+    display: grid;              /* Modo de organização de elementos em Grade - Colunas e Linhas - parecido com uma tabela */
+    justify-content: center;    /* Alinhamento horizontal */
+    align-items: center;        /* Alinhamento vertical */
+    grid-template-columns: repeat(auto-fill, 518px);    /* Definimos as colunas do Grid/Grade com uma largura mínima de 518 pixels, preenchendo automaticamente o espaço disponível. */ 
+    gap: 20px;  /* Espaçamento acima, abaixo, e nas laterais usado no display grid, para dar espaço aos elementos */
+}
 
-    display: grid;              /* modo de organização de elementos em Grade - Colunas e Linhas - parecido com uma tabela*/
-    justify-content: center;    /* alinhamento horizontal */
-    align-items: center;        /* alinhamento vertical */
-    grid-template-columns: repeat(auto-fill, 518px);    /* defininos as colunas do Grid/Grade com uma largura mínima de 518 pixels, preenchendo automaticamente o espaço disponível. */ 
-    gap: 20px;  /* espaçamento acima, abaixo, e nas laterais usado no display grid, para dar espaço aos elementos */
+@media screen and (max-width: 768px) {
+    .contato_container {
+        margin: 32px auto; /* Ajusta o espaçamento em dispositivos móveis */
+        padding: 0 16px; /* Reduz o padding em dispositivos móveis */
+        grid-template-columns: 1fr; /* Ajusta a grade para uma coluna em dispositivos móveis */
+    }
 }
 
 .contato_container h4 {
@@ -252,7 +246,6 @@ h4 {
     flex-direction: column;
     justify-content: center;    /* alinhamento horizontal */
     align-items: center;        /* alinhamento vertical */
-
     margin: 64px 0 0 0;
     font-size: 20px;
 }
@@ -280,16 +273,21 @@ h4 {
     filter: brightness(0) saturate(100%) invert(51%) sepia(86%) saturate(1958%) hue-rotate(320deg) brightness(95%) contrast(101%); /* Ícones ficam rosa ao passar o mouse */
 }
 
-
 /* FORMULÁRIO */
 form {
     display: flex;
     flex-direction: column;
-    width: 480px;
-
-    margin: 112px 0 0 0;
+    width: 480px; /* Largura original */
+    margin: 112px auto 0; /* Espaçamento original */
     padding: 24px;
     border: none;
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 100%; /* O formulário ocupará toda a largura disponível em telas pequenas */
+        margin: 64px auto 0; /* Ajusta o espaçamento superior em dispositivos móveis */
+    }
 }
 
 form label {
@@ -308,7 +306,7 @@ textarea {
 }
 
 textarea {
-    resize: none;   /* impedimos que o Textarea seja aumentado ou diminuido pelo usuário*/
+    resize: none;   /* impede que o Textarea seja aumentado ou diminuído pelo usuário */
 }
 
 /* RODAPÉ */
@@ -323,4 +321,33 @@ footer {
 
 .feito-com {
     color: var(--white); /* Define a cor do texto "feito com...." como branca */
+}
+
+/* Configurações de responsividade */
+@media screen and (max-width: 768px) {
+    .home_container h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .home_container .btn {
+        width: 80%; /* O botão ocupará 80% da largura da tela em dispositivos móveis */
+    }
+
+    .home_content {
+        width: 80vw; /* O conteúdo ocupará 80% da tela visível em dispositivos móveis */
+    }
+
+    .home_content_img {
+        width: 90%; /* A imagem ocupará 90% da largura em dispositivos móveis */
+    }
+
+    .sobre_container img {
+        width: 50%; /* Reduz o tamanho da imagem no modo responsivo */
+    }
+
+    .social_container {
+        width: 100%;
+        justify-content: space-around; /* Alinha os ícones de redes sociais de forma mais espaçada */
+    }
 }
