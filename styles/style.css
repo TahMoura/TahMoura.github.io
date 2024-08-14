@@ -249,19 +249,28 @@ h4 {
 }
 
 /* Ajustes para o texto "Você pode entrar em contato" */
-.contato_content h4 {
+.contato_container h4 {
     font-size: 32px; /* Tamanho da fonte original */
     text-align: center; /* Alinhamento centralizado */
     margin: 16px 0; /* Margem original */
 }
 
-/* Responsividade para telas pequenas */
-@media screen and (max-width: 768px) {
+/* Responsividade para telas pequenas, como uma tela de 6 polegadas */
+@media screen and (max-width: 600px) {
     .contato_content h4 {
-        font-size: 24px; /* Ajusta o tamanho da fonte em telas pequenas */
-        margin: 16px 8px; /* Ajusta a margem para melhor espaçamento em telas pequenas */
+        font-size: 28px; /* Ajusta o tamanho da fonte para uma tela de 6 polegadas */
+        margin: 16px 8px; /* Ajusta a margem para melhor espaçamento em telas menores */
+    }
+    
+    .contato_container {
+        padding: 0 16px; /* Reduz o padding lateral para telas menores */
+    }
+    
+    .contato_content {
+        font-size: 18px; /* Ajusta o tamanho da fonte do conteúdo de contato para melhor legibilidade em telas pequenas */
     }
 }
+
 
 .contato_content {
     display: flex;
