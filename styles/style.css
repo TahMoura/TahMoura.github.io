@@ -62,18 +62,31 @@ a {
 /* Classe Padrão para todos os Botões */
 .btn {
     text-align: center;
-    padding: 12px 32px; /* Definindo espaçamento interno de 12px acima e abaixo e 32px nas laterais */
-    background: none;   /* Sem background */
-    border: 1px solid var(--pink-500);    /* Borda com 1px, com a linha sólida e cor roxa */
+    padding: 12px 32px; /* Espaçamento interno original */
+    background: none;
+    border: 1px solid var(--pink-500);
     color: var(--black);
-    border-radius: 10px;    /* Deixa a borda das tags arredondadas */
-    font-weight: 700;       /* Deixa a fonte em negrito */
+    border-radius: 10px;
+    font-weight: 700;
+    display: inline-block; /* Garante que o botão se comporte como um bloco em linha */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura total */
+    margin: 8px; /* Adiciona um pouco de espaçamento ao redor dos botões */
 }
 
-/* Hover: pseudo-classe que modifica algo no HTML quando o usuário passa o mouse acima do elemento */
 .btn:hover {
     background: var(--pink-500);
+    color: var(--white); /* Garante que o texto seja legível ao passar o mouse */
 }
+
+/* Ajustes para responsividade */
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 100%; /* Faz com que os botões ocupem toda a largura disponível em telas pequenas */
+        padding: 12px; /* Ajusta o espaçamento interno em telas pequenas */
+        font-size: 14px; /* Ajusta o tamanho da fonte em telas pequenas */
+    }
+}
+
 
 /* Classe Padrão para Alinhamento com Display Flex */
 .flex {
@@ -235,10 +248,19 @@ h4 {
     }
 }
 
-.contato_container h4 {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 16px 0;
+/* Ajustes para o texto "Você pode entrar em contato" */
+.contato_content h4 {
+    font-size: 32px; /* Tamanho da fonte original */
+    text-align: center; /* Alinhamento centralizado */
+    margin: 16px 0; /* Margem original */
+}
+
+/* Responsividade para telas pequenas */
+@media screen and (max-width: 768px) {
+    .contato_content h4 {
+        font-size: 24px; /* Ajusta o tamanho da fonte em telas pequenas */
+        margin: 16px 8px; /* Ajusta a margem para melhor espaçamento em telas pequenas */
+    }
 }
 
 .contato_content {
