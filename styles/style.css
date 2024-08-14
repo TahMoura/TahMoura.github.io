@@ -274,6 +274,10 @@ h4 {
     }
 }
 
+.min-spacing {
+    margin-top: -24px; /* Valor negativo para reduzir o espaçamento entre o título e o texto */
+}
+
 /* REDES SOCIAIS */
 .social_container {
     display: flex;
