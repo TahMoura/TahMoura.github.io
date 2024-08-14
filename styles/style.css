@@ -248,7 +248,8 @@ h4 {
 .contato_container h4 {
     font-size: 32px;
     font-weight: bold;
-    margin: 16px 0; /* Ajuste original, pode ser modificado conforme necessidade */
+    margin: 16px 0; /* Espaçamento original */
+    margin-bottom: 24px; /* Aumenta o espaçamento inferior em telas pequenas */
 }
 
 /* Ajustes para o conteúdo do contato */
@@ -261,17 +262,18 @@ h4 {
     font-size: 20px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .contato_content {
-        margin: 32px 0 0 0; /* Ajusta a margem superior em telas pequenas */
+        margin: 90px 0 0 0; /* Ajusta a margem superior em telas pequenas */
         gap: 16px; /* Reduz o espaçamento entre os itens para evitar sobreposição */
     }
 
     /* Ajusta o espaçamento adicional para o botão */
     .contato_content .btn {
-        margin-top: 64px; /* Aumenta a margem superior ao botão em telas pequenas para afastar do título */
+        margin-top: 48px !important; /* Aumenta a margem superior ao botão em telas pequenas para afastar do título */
     }
 }
+
 
 /* REDES SOCIAIS */
 .social_container {
